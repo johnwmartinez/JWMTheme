@@ -1,0 +1,199 @@
+.h1, h1 {
+  font-size: 2em;
+}
+
+.blogint {
+  font-size: 18px;
+  font-weight: 400;
+}
+.blogint h2, .blogint h3, .blogint h4, .blogint h5, .blogint h6 {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.blogint p {
+  color: #222322;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.blogint img {
+  height: auto;
+  max-width: 100%;
+}
+.blogint__header {
+  color: #000000;
+  padding: 20px 0;
+}
+.blogint__header--cont {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 30px 0;
+  width: 98%;
+}
+.blogint__header--cont h1 {
+  font-weight: 400;
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+.blogint__cuerpo {
+  padding-bottom: 50px;
+}
+.blogint .blogpubs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.blogint .blogpubs__card {
+  border: 1px solid #E7E7E7;
+  flex-basis: 32%;
+}
+.blogint .blogpubs__card--cont {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.blogint .blogpubs__card.columna2 {
+  flex-basis: 49%;
+  margin-bottom: 2%;
+}
+.blogint .blogpubs__card.columna2 .blogpubs__card--cont {
+  gap: 2%;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+.blogint .blogpubs__card.columna2 .blogpubs__card--cont.sin-foto {
+  grid-template-columns: 1fr;
+}
+@media (max-width: 768px) {
+  .blogint .blogpubs__card.columna2 .blogpubs__card--cont {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .blogint .blogpubs__card.columna2 {
+    flex-basis: 100%;
+  }
+}
+.blogint .blogpubs__card--foto img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.blogint .blogpubs__card--foto.search img {
+  max-height: 260px;
+}
+.blogint .blogpubs__card--content__int {
+  padding: 21px 25px;
+}
+.blogint .blogpubs__card--content__int h2 {
+  color: #222322;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  mix-blend-mode: normal;
+}
+.blogint .blogpubs__card--content__int h2 a {
+  color: #222322;
+  text-decoration: none;
+}
+.blogint .blogpubs__card--content__int h2 a:hover {
+  text-decoration: underline;
+}
+.blogint .blogpubs__card--content__int h3 {
+  color: #243c9b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 3em;
+  margin: 0;
+  mix-blend-mode: normal;
+  text-transform: uppercase;
+}
+.blogint .blogpubs__card--content__int p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.6em;
+  color: #222322;
+  mix-blend-mode: normal;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .blogint .blogpubs__card {
+    flex-basis: 100%;
+  }
+}
+
+.singleblog__header {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 40px 0 0;
+  width: 98%;
+}
+.singleblog__cont {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 0 40px;
+  width: 98%;
+}
+@media (max-width: 768px) {
+  .singleblog__cont {
+    padding: 0 10px 40px;
+  }
+}
+.singleblog__body--intro {
+  margin-bottom: 20px;
+}
+.singleblog__body--intro .fecha {
+  color: #EF7755;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 35px;
+  mix-blend-mode: normal;
+  text-transform: uppercase;
+}
+.singleblog__body--author {
+  align-items: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 56px 2fr;
+  margin-bottom: 30px;
+}
+.singleblog__body--author_avatar img {
+  border-radius: 100%;
+  height: 56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 56px;
+}
+.singleblog__body--author_textos h3 {
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin: 0 auto;
+  mix-blend-mode: normal;
+}
+.singleblog__body--author_textos p {
+  color: #837E7E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 0.2px;
+  mix-blend-mode: normal;
+  margin: 0 auto;
+}
+.singleblog__body--content--cont {
+  font-weight: 400;
+}/*# sourceMappingURL=blog.css.map */

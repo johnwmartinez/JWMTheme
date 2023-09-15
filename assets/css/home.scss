@@ -1,0 +1,141 @@
+@import 'scss/_variables.scss';
+.home{
+
+    &__slider{
+        position: relative;
+        &--menu{
+            align-items: center;
+            display: grid;
+            height: 100%;
+            position: absolute;
+            z-index: 100;
+            img{
+                display:flex;
+                max-width: 596px;
+                width: 100%;
+                @media (max-width:$lg){
+                    height: auto;
+                    width: 64%;
+                }
+            }
+            @media (max-width:$md){
+                display:none;
+            }
+        }
+    }
+
+    &__bloque1{
+        padding:90px 10px;
+        background-color: #F5F5F5;
+        h2.titulo{
+            color: #222322;
+            font-weight: 300;
+            margin: 0 auto;
+            text-transform: uppercase;
+            strong{
+                font-weight:900;
+            }
+        }
+    }
+
+    &__bloque2{
+        padding:90px 10px;
+        background-color: #ffffff;
+        h2.titulo{
+            align-items: center;
+            color: #222322;
+            display:flex;
+            font-weight: 300;
+            gap:10px;
+            margin: 0 auto;
+            text-transform: uppercase;
+            strong{
+                font-weight:900;
+            }
+            .icon{
+                img{
+                    max-width: 60px;
+                }
+            }
+        }
+    }
+
+    &__bloque3{
+        background-color: #000000;
+        color: #ffffff;
+        padding:90px 10px;
+        h2.titulo{
+            align-items: center;
+            color: #ffffff;
+            display:flex;
+            font-weight: 300;
+            gap:10px;
+            margin: 0 auto;
+            margin-bottom:10px;
+            text-transform: uppercase;
+            strong{
+                font-weight:900;
+            }
+            i{
+                transform: rotate(315deg);
+                color:$third;
+            }
+        }
+    }
+
+
+    &__bloque4{
+        padding:90px 10px 0;
+        background-color: #FFDED2;
+        h2.titulo{
+            color: #222322;
+            font-weight: 300;
+            margin: 0 auto;
+            text-transform: uppercase;
+            strong{
+                font-weight:900;
+            }
+        }
+    }
+
+    &__bloque5{
+        margin-bottom:60px;
+    }
+
+    &__bloque6{
+        padding:90px 10px;
+        h2.titulo{
+            color: #222322;
+            font-weight: 300;
+            margin: 0 auto;
+            text-transform: uppercase;
+            strong{
+                font-weight:900;
+            }
+        }
+    }
+
+
+}
+
+.bolsaempleo{
+    align-items: center;
+    background: url('../img/bolsa_bg.jpg') no-repeat center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 60px;
+
+    &__cont{
+        h3{
+            color: #fff;
+            font-size: 48px;
+            line-height: 1.2em;
+            margin: 0 0 20px;
+            max-width: 480px;
+        }
+        p{
+
+        }
+    }
+}

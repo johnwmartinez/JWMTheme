@@ -1,0 +1,30 @@
+$xs: 400px;
+$sm: 500px;
+$smb: 600px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$primary: #243c9b;
+$secondary: #6c85e8;
+$third: #6c85e8;
+$cuatro: #EF5C22;
+$cinco: #C3A75D;
+$seis: #19c5f7;
+$siete: #EF7755;
+$ocho: #F2B999;
+$nueve: #E1633B;
+$diez: #A9C148;
+$once: #FFA187;
+
+$bgcolor1: #ffd900;
+$bgcolor2: #3E92CF;
+
+$context: 32;
+@function rem($pixels) {
+    @return $pixels / $context * 1rem;
+}
+
+.h1, h1 {
+    font-size: 2.0em;
+}

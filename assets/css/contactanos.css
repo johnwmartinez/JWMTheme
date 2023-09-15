@@ -1,0 +1,154 @@
+.h1, h1 {
+  font-size: 2em;
+}
+
+.contactanosint {
+  font-size: 18px;
+  font-weight: 400;
+}
+.contactanosint h2, .contactanosint h3, .contactanosint h4, .contactanosint h5, .contactanosint h6 {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.contactanosint p {
+  color: #222322;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.contactanosint img {
+  height: auto;
+  max-width: 100%;
+}
+.contactanosint__header {
+  color: #000000;
+  padding: 20px 0;
+}
+.contactanosint__header--cont {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 30px 0;
+  width: 98%;
+}
+.contactanosint__header--cont h1 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+.contactanosint__cuerpo {
+  background: rgb(250, 250, 250);
+  background: linear-gradient(90deg, rgb(250, 250, 250) 0%, rgb(250, 250, 250) 50%, rgb(255, 255, 255) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fafafa",endColorstr="#ffffff",GradientType=1);
+  padding: 50px;
+}
+.contactanosint__cuerpo--cont h2 {
+  border-left: 17px solid #F2BB54;
+  color: #333333;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0 0 50px;
+  padding-left: 15px;
+}
+.contactanosint__cuerpo--cont h3 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0 0 6px;
+}
+.contactanosint__cuerpo--cont p {
+  color: #333333;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1em;
+  margin: 0 0 45px;
+}
+.contactanosint__cuerpo--cont p a {
+  color: #333333;
+  text-decoration: none;
+}
+.contactanosint__cuerpo--cont p a:hover {
+  color: #243c9b;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .contactanosint__cuerpo--cont p {
+    font-size: 20px;
+  }
+}
+.contactanosint__cuerpo--form {
+  margin: 0 auto;
+  max-width: 480px;
+}
+.contactanosint__cuerpo--form h2 {
+  border-left: 17px solid #DA6B3A;
+  color: #333333;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0 0 50px;
+  padding-left: 15px;
+}
+.contactanosint__cuerpo--form__form p {
+  margin: 0 0 10px;
+}
+.contactanosint__cuerpo--form__form label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1em;
+}
+.contactanosint__cuerpo--form__form .form-control {
+  border: 1px solid #E9E9E9;
+}
+@media (max-width: 768px) {
+  .contactanosint__cuerpo {
+    background: #fafafa;
+    padding: 10px;
+  }
+}
+
+.singlecontactanos__cont {
+  margin: 0 auto;
+  max-width: 930px;
+  padding: 60px 0 0;
+  width: 98%;
+}
+.singlecontactanos__header--cont__fecha p {
+  color: #EF7755;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  padding: 0;
+  text-transform: uppercase;
+}
+.singlecontactanos__body {
+  padding: 30px 0;
+}
+.singlecontactanos__body p {
+  color: #222322;
+  font-weight: 400;
+}
+.singlecontactanos__relacionados {
+  background-color: #FAFAFA;
+}
+.singlecontactanos__relacionados--cont {
+  margin: 0 auto;
+  max-width: 930px;
+  padding: 20px 0;
+  width: 98%;
+}
+.singlecontactanos__relacionados--cont h2 {
+  border-left: 17px solid #DA6B3A;
+  padding: 6px 0;
+  padding-left: 17px;
+}
+.singlecontactanos__relacionados--cont ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=contactanos.css.map */

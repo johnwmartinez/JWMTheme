@@ -1,0 +1,20 @@
+body{
+    // background: url('../img/general/bg.jpg') #000000 center top no-repeat;
+    // background-attachment: fixed;
+    background-color: #ffffff;
+    color:#000000;
+    font-family: 'Cera Pro', 'sans-serif';
+    font-weight: 400;
+}
+
+.bg.bg_registro,
+.bg_registro{
+    background: url('../img/general/bg_registro.jpg') #000000 center center no-repeat;
+}
+img{
+    max-width: 100%;
+}
+
+.has-text-align-center{
+    text-align: center;
+}

@@ -1,0 +1,290 @@
+@import 'scss/_variables.scss';
+.singleprograma{
+    &__cont{
+        
+    }
+    &__header{
+        background-color: #000;
+        color: #fff;
+        padding:40px 0 60px;
+        &--cont{
+            margin: 0 auto;
+            max-width:1200px;
+            width:98%;
+        }
+        &--bloques{
+            margin: 0 auto;
+            max-width:1200px;
+            width:98%;
+            &__cont{
+                display: grid;
+                gap:60px;
+                grid-template-columns: 460px 1fr;
+                &.sin-video{
+                    grid-template-columns: 1fr;
+                }
+                @media (max-width:$lg){
+                    grid-template-columns: 1fr;
+                    gap:0;
+                }
+            }
+            &__textos{
+                display: grid;
+                align-items: center;
+                h1{
+                    color: #FFFFFF;
+                    font-size: 24px;
+                    font-weight: 400;
+                    letter-spacing: 0.2px;
+                    line-height: 20px;
+                    margin: 0 0 24px;
+                    mix-blend-mode: normal;
+                }
+                h2{
+                    color: #FFFFFF;
+                    font-size: 36px;
+                    font-weight: 700;
+                    letter-spacing: 0.2px;
+                    line-height: 1em;
+                    mix-blend-mode: normal;
+                }
+                p{
+                    color: #EF7755;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: 0.2px;
+                    line-height: 1.5em;
+                    mix-blend-mode: normal;
+                }
+            }
+        }
+    }
+    &__body{
+        &--barra{
+            border-bottom: 1px solid #E2E2E2;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.2em;
+            color: #000000;
+            p{
+                margin: 0 0 2px;
+            }
+
+            &__cont{
+                display: grid;
+                grid-template-columns: 40% 1fr;
+                margin: 0 auto;
+                max-width:1200px;
+                padding:10px 0;
+                width:98%;
+                @media (max-width:$md){
+                    grid-template-columns: 1fr;
+                }
+            }
+            &__precio{
+                align-items: center;
+                display:grid;
+                @media (max-width:$md){
+                    text-align: center;
+                }
+            }
+            &__botones{
+                align-items: center;
+                border-left: 1px solid #E2E2E2;
+                display: flex;
+                justify-content: space-around;
+                :first-letter{
+                    text-transform:capitalize;
+                }
+                .fecha{
+                    color:#999999;
+                }
+                &--fecha{
+                    @media (max-width:$sm){
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                @media (max-width:$md){
+                    border:0;
+                }
+                @media (max-width:$sm){
+                    border:0; 
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        &--contenido{
+            padding:30px 0;
+            h2{
+                border-left: 17px solid #DA6B3A;
+                color: #222322;
+                font-size: 28px;
+                font-weight: 500;
+                letter-spacing: -0.761905px;
+                line-height: 40px;
+                margin: 0 auto 40px;
+                max-width:1000px;
+                padding-left: 16px;
+                &.text-white{
+                    color:#fff;
+                }
+            }
+            > p{
+                margin: 0 auto 20px;
+                max-width:1000px;
+                padding:0 10px;
+
+                color: #4C4C4C;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 2em;
+            }
+            ul, li{
+                color: #4C4C4C;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 2em;
+            }
+            .wp-block-columns{
+                margin: 0 auto;
+                max-width:1000px;
+                width:100%;
+                &.ancho_completo{
+                    max-width: 100% ;
+                }
+                &.bloque_cita{
+                    max-width:1000px;
+                }
+                .wp-block-quote{
+                    color: #222322;
+                    font-size: 28px;
+                    font-weight: 500;
+                    letter-spacing: 0.2px;
+                    line-height: 42px;
+                    mix-blend-mode: normal;
+                }
+                @media (max-width:$md){
+                    flex-wrap: wrap!important;
+                }
+
+            }
+            > .wp-block-columns{
+                margin: 0 auto 40px;
+                @media (max-width:$md){
+                    flex-wrap: wrap!important;
+                }
+            }
+
+            .listas{
+                ol, ul{
+                    margin: 0 auto;
+                    margin-bottom:2em;
+                    padding-left: 3em;                
+                    li{
+                        color:#fff;
+                        margin-bottom:0.5em;
+                        &::marker{
+                            content: '○  ';
+                            color:$primary;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+
+            .bloque_negro{
+                background-color: #000000;
+                width:100%;
+            }
+
+            .bloque_gris{
+                background-color: #FAFAFA;
+                border: 1px solid #E7E7E7;
+                width:100%;
+                ol, ul{
+                    li{
+                        color:#4C4C4C;
+                    }
+                }
+            }
+
+            .bloque_naranja{
+                background-color: #FAB243;
+                width:100%;
+            }
+
+            .grilla_columnas{
+                align-items: unset;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                h3{
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 1.5em;
+                    color: #4C4C4C;
+                }
+                .items_separados{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                @media (max-width:$md){
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .btn_descarga{
+                a{
+                    border-bottom: 2px solid #DC4633;
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: 0.2px;
+                    line-height: 35px;
+                    mix-blend-mode: normal;
+                    padding-bottom: 4px;
+                    text-decoration: none;
+                    &::after{
+                        color: $primary;
+                        content:'→';
+                        display: inline-block;
+                        font-size: 20px;
+                        margin-left:4px;
+                        vertical-align: top;
+                    }
+                }
+            }
+
+        }
+
+        &--testimonios{
+            margin: 0 auto;
+            max-width: 1200px;
+            width:98%;
+            h2{
+                text-align: center;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 1.6em;
+                letter-spacing: -0.761905px;
+                color: #222322;
+            }
+        }
+    }
+
+    img{
+        height:auto;
+    }
+}
+
+
+
+.bloque_naranja{
+    background-color: #FAB243;
+}
+
+
+

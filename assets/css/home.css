@@ -1,0 +1,128 @@
+.h1, h1 {
+  font-size: 2em;
+}
+
+.home__slider {
+  position: relative;
+}
+.home__slider--menu {
+  align-items: center;
+  display: grid;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+}
+.home__slider--menu img {
+  display: flex;
+  max-width: 596px;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .home__slider--menu img {
+    height: auto;
+    width: 64%;
+  }
+}
+@media (max-width: 768px) {
+  .home__slider--menu {
+    display: none;
+  }
+}
+.home__bloque1 {
+  padding: 90px 10px;
+  background-color: #F5F5F5;
+}
+.home__bloque1 h2.titulo {
+  color: #222322;
+  font-weight: 300;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.home__bloque1 h2.titulo strong {
+  font-weight: 900;
+}
+.home__bloque2 {
+  padding: 90px 10px;
+  background-color: #ffffff;
+}
+.home__bloque2 h2.titulo {
+  align-items: center;
+  color: #222322;
+  display: flex;
+  font-weight: 300;
+  gap: 10px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.home__bloque2 h2.titulo strong {
+  font-weight: 900;
+}
+.home__bloque2 h2.titulo .icon img {
+  max-width: 60px;
+}
+.home__bloque3 {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 90px 10px;
+}
+.home__bloque3 h2.titulo {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-weight: 300;
+  gap: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.home__bloque3 h2.titulo strong {
+  font-weight: 900;
+}
+.home__bloque3 h2.titulo i {
+  transform: rotate(315deg);
+  color: #6c85e8;
+}
+.home__bloque4 {
+  padding: 90px 10px 0;
+  background-color: #FFDED2;
+}
+.home__bloque4 h2.titulo {
+  color: #222322;
+  font-weight: 300;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.home__bloque4 h2.titulo strong {
+  font-weight: 900;
+}
+.home__bloque5 {
+  margin-bottom: 60px;
+}
+.home__bloque6 {
+  padding: 90px 10px;
+}
+.home__bloque6 h2.titulo {
+  color: #222322;
+  font-weight: 300;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.home__bloque6 h2.titulo strong {
+  font-weight: 900;
+}
+
+.bolsaempleo {
+  align-items: center;
+  background: url("../img/bolsa_bg.jpg") no-repeat center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding: 60px;
+}
+.bolsaempleo__cont h3 {
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.2em;
+  margin: 0 0 20px;
+  max-width: 480px;
+}/*# sourceMappingURL=home.css.map */

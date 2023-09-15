@@ -1,0 +1,281 @@
+.h1, h1 {
+  font-size: 2em;
+}
+
+.ofertasint {
+  font-size: 18px;
+  font-weight: 400;
+}
+.ofertasint h2, .ofertasint h3, .ofertasint h4, .ofertasint h5, .ofertasint h6 {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.ofertasint p {
+  color: #222322;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+.ofertasint img {
+  height: auto;
+  max-width: 100%;
+}
+.ofertasint__header {
+  color: #000000;
+  padding: 20px 0;
+}
+.ofertasint__header--cont {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 30px 0;
+  width: 98%;
+}
+.ofertasint__header--cont h1 {
+  font-weight: 400;
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+.ofertasint__header--descripcion {
+  align-items: center;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 280px;
+  width: 100%;
+}
+.ofertasint__header--descripcion > div:nth-child(2) {
+  text-align: right;
+}
+.ofertasint__header--descripcion a {
+  color: #222322;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .ofertasint__header--descripcion {
+    grid-template-columns: 1fr;
+  }
+}
+.ofertasint__cuerpo {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding-bottom: 50px;
+}
+.ofertasint__cuerpo .filtros {
+  margin-bottom: 2em;
+}
+.ofertasint__cuerpo .filtros form > ul {
+  display: flex;
+}
+.ofertasint__cuerpo .filtros ul {
+  flex-wrap: wrap;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ofertasint__cuerpo .filtros ul li {
+  font-size: 14px;
+}
+.ofertasint__cuerpo .filtros ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.ofertasint__cuerpo .filtros ul li a i {
+  color: #243c9b;
+  font-size: 0.7em;
+}
+.ofertasint__cuerpo .filtros ul li:first-child {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .ofertasint__cuerpo .filtros ul {
+    gap: 16px 50px;
+  }
+}
+.ofertasint__cuerpo .buscador .form-control {
+  border: 1px solid #E9E9E9;
+  border-radius: 14px;
+  max-width: 540px;
+  padding: 10px 18px;
+}
+.ofertasint__cuerpo .ofertalist {
+  display: grid;
+  gap: 0 2%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ofertasint__cuerpo .ofertalist__card {
+  display: block;
+  border: 1px solid #E7E7E7;
+  margin-bottom: 3%;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+.ofertasint__cuerpo .ofertalist__card__int {
+  align-items: center;
+  display: grid;
+}
+.ofertasint__cuerpo .ofertalist__card__int--fecha p {
+  color: #EF7755;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 2em;
+  margin: 0 0 14px;
+  mix-blend-mode: normal;
+  text-transform: uppercase;
+}
+.ofertasint__cuerpo .ofertalist__card__int--titulo h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.2px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+.ofertasint__cuerpo .ofertalist__card__int--descripcion {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.ofertasint__cuerpo .ofertalist__card__int--descripcion p {
+  color: #8A8A8A;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.147948px;
+  line-height: 21px;
+  margin: 0 0 10px;
+  mix-blend-mode: normal;
+}
+.ofertasint__cuerpo .ofertalist__card__int--botones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 10px;
+}
+.ofertasint__cuerpo .ofertalist__card__int--botones > div:nth-child(2) {
+  text-align: right;
+}
+.ofertasint__cuerpo .ofertalist__card__int--botones a.ver_mas {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.8em;
+  letter-spacing: 0.2px;
+  color: #000000;
+  mix-blend-mode: normal;
+  text-decoration: none;
+}
+.ofertasint__cuerpo .ofertalist__card__int--botones a.ver_mas i {
+  color: #F2B999;
+}
+.ofertasint__cuerpo .ofertalist__card__int--botones a.ver_mas:hover {
+  color: #243c9b;
+  text-decoration: underline;
+}
+.ofertasint__cuerpo .ofertalist__card__int--botones a.aplicar {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.8em;
+  letter-spacing: 0.2px;
+  color: #E83027;
+  mix-blend-mode: normal;
+  border: 1px solid #E83027;
+  padding: 10px 8px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+.ofertasint__cuerpo .ofertalist__card__int--botones a.aplicar:hover {
+  background-color: #E83027;
+  color: #fff;
+}
+@media (max-width: 400px) {
+  .ofertasint__cuerpo .ofertalist__card__int--botones {
+    grid-template-columns: 1fr;
+  }
+}
+.ofertasint__cuerpo .ofertalist__card .oferta__tipo p {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 2em;
+  mix-blend-mode: normal;
+  text-transform: uppercase;
+}
+.ofertasint__cuerpo .ofertalist__card.Pedido {
+  border-left: 3px solid #EF7755;
+}
+.ofertasint__cuerpo .ofertalist__card.Pedido .oferta__tipo p {
+  color: #EF7755;
+}
+.ofertasint__cuerpo .ofertalist__card.Oferta {
+  border-left: 3px solid #6c85e8;
+}
+.ofertasint__cuerpo .ofertalist__card.Oferta .oferta__tipo p {
+  color: #6c85e8;
+}
+@media (max-width: 992px) {
+  .ofertasint__cuerpo .ofertalist {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .ofertasint__cuerpo .ofertalist {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ofertaIndv__cont {
+  padding: 10px 40px 60px;
+}
+.ofertaIndv__cont h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.1em;
+  letter-spacing: 0.2px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+.ofertaIndv__cont > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8em;
+  letter-spacing: 0.147948px;
+  color: #8A8A8A;
+  mix-blend-mode: normal;
+}
+.ofertaIndv__cont--campos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ofertaIndv__cont--campos .campoIndv {
+  width: 50%;
+  margin: 0 0 20px;
+}
+.ofertaIndv__cont--campos .campoIndv.full_width {
+  width: 100%;
+}
+.ofertaIndv__cont--campos .campoIndv strong {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+.ofertaIndv__cont--campos .campoIndv > div, .ofertaIndv__cont--campos .campoIndv span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+  letter-spacing: 0.147948px;
+  color: #8A8A8A;
+  mix-blend-mode: normal;
+}
+@media (max-width: 768px) {
+  .ofertaIndv__cont--campos .campoIndv {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ofertas.css.map */

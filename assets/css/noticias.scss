@@ -1,0 +1,121 @@
+@import 'scss/_variables.scss';
+.noticiasint{
+
+    font-size: 18px;
+    font-weight: 400;
+
+    h2, h3, h4, h5, h6{
+        margin: 0 auto;
+        margin-bottom:1.0em;
+    }
+    p{
+        color: #222322;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 0 auto;
+        margin-bottom:2em;
+    }
+    img{
+        height:auto;
+        max-width:100%;
+    }
+
+    &__header{
+        color:#000000;
+        padding:20px 0;
+
+        &--cont{
+            margin: 0 auto;
+            max-width: 1320px;
+            padding:30px 0;
+            width:98%;
+            h1{
+                font-weight: 400;
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+        &--banner{
+
+        }
+    }
+
+    &__cuerpo{
+        padding-bottom:50px;
+        @media (max-width:$md){
+            padding:0 20px 50px;
+        }
+    }
+
+
+
+}
+
+.singlenoticia{
+    
+    &__cont{
+        margin: 0 auto;
+        max-width: 930px;
+        padding:60px 0 0;
+        width:98%;
+        @media (max-width:$md){
+            padding:40px 10px 0;
+        }
+    }
+    &__header{
+        &--cont{
+            &__fecha{
+                p{
+                    color: #EF7755;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 0 0 10px;
+                    padding: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &__banner{
+        img{
+
+        }
+    }
+
+    &__body{
+        padding:30px 0;
+        p{
+            color: #222322;
+            font-weight: 400;
+        }
+    }
+
+    &__relacionados{
+        background-color: #FAFAFA;
+        &--cont{
+            margin: 0 auto;
+            max-width: 930px;
+            padding:20px 0;
+            width:98%;
+            h2{
+                border-left: 17px solid #DA6B3A;
+                padding: 6px 0;
+                padding-left: 17px;
+            }
+            ul{
+                list-style: none;
+                margin:0;
+                padding:0;
+                li{
+                    a{
+
+                    }
+                }
+            }
+
+        }
+    }
+
+}

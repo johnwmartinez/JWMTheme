@@ -1,0 +1,296 @@
+@import 'scss/_variables.scss';
+.ofertasint{
+
+    font-size: 18px;
+    font-weight: 400;
+
+    h2, h3, h4, h5, h6{
+        margin: 0 auto;
+        margin-bottom:1.0em;
+    }
+    p{
+        color: #222322;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 0 auto;
+    }
+    img{
+        height:auto;
+        max-width:100%;
+    }
+
+    &__header{
+        color:#000000;
+        padding:20px 0;
+
+        &--cont{
+            margin: 0 auto;
+            max-width: 1320px;
+            padding:30px 0;
+            width:98%;
+            h1{
+                font-weight: 400;
+                margin: 0 0 40px;
+                text-transform: uppercase;
+            }
+        }
+
+        &--descripcion{
+            align-items: center;
+            display: grid;
+            gap:50px;
+            grid-template-columns: 1fr 280px;
+            width:100%;
+            > div:nth-child(2){
+                text-align: right;
+            }
+            a{
+                color: #222322;
+                font-weight: bold;
+            }
+            @media (max-width:$md){
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &__cuerpo{
+        margin: 0 auto;
+        max-width: 1320px;
+        padding-bottom:50px;
+
+        .filtros{
+            margin-bottom:2em;
+            form > ul{
+                display:flex;
+            }
+            ul{
+                flex-wrap: wrap;
+                gap:50px;
+                list-style: none;
+                margin:0;
+                padding:0;
+                li{
+                    font-size: 14px;
+                    a{
+                        color:#000;
+                        text-decoration: none;
+                        i{
+                            color:$primary;
+                            font-size: 0.7em;
+                        }
+                    }
+                    &:first-child{
+                        font-weight: bold;
+                    }
+                }
+                @media (max-width:$md){
+                    gap:16px 50px;
+                }
+            }
+        }
+
+        .buscador{
+            .form-control{
+                border: 1px solid #E9E9E9;
+                border-radius: 14px;
+                max-width: 540px;
+                padding: 10px 18px;
+            }
+        }
+
+
+        .ofertalist{
+            display: grid;
+            gap:0 2%;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &__card{
+                display:block;
+                border: 1px solid #E7E7E7;
+                margin-bottom:3%;
+                padding:20px;
+                text-decoration: none;
+                transition: 0.3s all;
+                
+                &__int{
+                    align-items: center;
+                    display: grid;
+                    &--fecha{
+                        p{
+                            color: #EF7755;
+                            font-size: 12px;
+                            font-weight: 700;
+                            letter-spacing: 0.2px;
+                            line-height: 2em;
+                            margin: 0 0 14px;
+                            mix-blend-mode: normal;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &--titulo{
+                        h3{
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 1.2em;
+                            letter-spacing: 0.2px;
+                            color: #000000;
+                            mix-blend-mode: normal;
+                        }
+                    }
+                    &--descripcion{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        p{
+                            color: #8A8A8A;
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: 0.147948px;
+                            line-height: 21px;
+                            margin: 0 0 10px;
+                            mix-blend-mode: normal;
+                        }
+                    }
+                    &--botones{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        padding-top:10px;
+                        > div:nth-child(2){
+                            text-align: right;
+                        }
+                        a{
+                            &.ver_mas{
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 1.8em;
+                                letter-spacing: 0.2px;
+                                color: #000000;
+                                mix-blend-mode: normal;
+                                text-decoration: none;
+                                i{
+                                    color: $ocho;
+                                }
+                                &:hover{
+                                    color: $primary;
+                                    text-decoration: underline;
+                                }
+                            }
+                            &.aplicar{
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 1.8em;
+                                letter-spacing: 0.2px;
+                                color: #E83027;
+                                mix-blend-mode: normal;
+                                border:1px solid #E83027;
+                                padding:10px 8px;
+                                border-radius: 30px;
+                                text-decoration: none;
+                                transition: 0.3s all;
+                                &:hover{
+                                    background-color: #E83027;
+                                    color:#fff;
+                                }
+                            }
+                        }
+                        @media (max-width:$xs){
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                }
+
+                .oferta__tipo p{;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 0.2px;
+                    line-height: 2em;
+                    mix-blend-mode: normal;
+                    text-transform: uppercase;
+                }
+
+                &.Pedido{
+                    border-left:3px solid $siete;
+                    .oferta__tipo p{
+                        color:$siete;
+                    }
+                }
+                &.Oferta{
+                    border-left:3px solid $secondary;
+                    .oferta__tipo p{
+                        color:$secondary;
+                    }
+                }
+
+            }
+
+            @media (max-width:$lg){
+                grid-template-columns: 1fr 1fr;
+            }
+            @media (max-width:$md){
+                grid-template-columns: 1fr;
+            }
+        }
+
+    }
+
+}
+
+
+.ofertaIndv{
+    &__cont{
+        padding:10px 40px 60px;
+        h3{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.1em;
+            letter-spacing: 0.2px;
+            color: #000000;
+            mix-blend-mode: normal;
+        }
+        > p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.8em;
+            letter-spacing: 0.147948px;
+            color: #8A8A8A;
+            mix-blend-mode: normal;
+        }
+        &--campos{
+            display:flex;
+            flex-wrap: wrap;
+            .campoIndv{
+                width:50%;
+                margin: 0 0 20px;
+                &.full_width{
+                    width:100%;
+                }
+                strong{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.5em;
+                    letter-spacing: 0.2px;
+                    color: #000000;
+                    mix-blend-mode: normal;
+                }
+                > div, span{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1.6em;
+                    letter-spacing: 0.147948px;
+                    color: #8A8A8A;
+                    mix-blend-mode: normal;
+                }
+                @media (max-width:$md){
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
